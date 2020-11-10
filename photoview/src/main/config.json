@@ -11,8 +11,7 @@
       "target": 3
     }
   },
-  "deviceConfig": {
-  },
+  "deviceConfig": {},
   "module": {
     "package": "com.github.chrisbanes.photoview",
     "deviceType": [

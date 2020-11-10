@@ -23,6 +23,8 @@ import ohos.agp.components.element.Element;
 import ohos.agp.utils.Matrix;
 import ohos.agp.utils.Rect;
 import ohos.app.Context;
+import ohos.media.image.PixelMap;
+import ohos.utils.net.Uri;
 
 /**
  * A zoomable ImageView. See {@link PhotoViewAttacher} for most of the details on how the zooming
@@ -76,20 +78,20 @@ public class PhotoView extends Image {
         return attacher.getScaleMode();
     }
 
-//    @Override
-//    public Matrix getImageMatrix() {
-//        return attacher.getImageMatrix();
-//    }
+    //    @Override
+    public Matrix getImageMatrix() {
+        return attacher.getImageMatrix();
+    }
 
-//    @Override
-//    public void setOnLongClickListener(OnLongClickListener l) {
-//        attacher.setOnLongClickListener(l);
-//    }
+    //    @Override
+    public void setOnLongClickListener(LongClickedListener l) {
+        attacher.setOnLongClickListener(l);
+    }
 
-//    @Override
-//    public void setOnClickListener(OnClickListener l) {
-//        attacher.setOnClickListener(l);
-//    }
+    //    @Override
+    public void setOnClickListener(ClickedListener l) {
+        attacher.setOnClickListener(l);
+    }
 
     @Override
     public void setClickedListener(Component.ClickedListener listener) {
@@ -105,7 +107,6 @@ public class PhotoView extends Image {
         }
     }
 
-
     @Override
     public void setImageElement(Element element) {
         super.setImageElement(element);
@@ -116,12 +117,25 @@ public class PhotoView extends Image {
     }
 
 //    @Override
-//    public void setImageResource(int resId) {
+    public void setImageResource(int resId) {
 //        super.setImageResource(resId);
-//        if (attacher != null) {
-//            attacher.update();
-//        }
-//    }
+        if (attacher != null) {
+            attacher.update();
+        }
+    }
+
+    @Override
+    public void setPixelMap(int resId) {
+        super.setPixelMap(resId);
+        if (attacher != null) {
+            attacher.update();
+        }
+    }
+
+    @Override
+    public void setPixelMap(PixelMap pixelMap) {
+        super.setPixelMap(pixelMap);
+    }
 
     @Override
     public void setImageAndDecodeBounds(int resId) {
@@ -132,21 +146,23 @@ public class PhotoView extends Image {
     }
 
 //    @Override
-//    public void setImageURI(Uri uri) {
+    public void setImageURI(Uri uri) {
 //        super.setImageURI(uri);
-//        if (attacher != null) {
-//            attacher.update();
-//        }
-//    }
+        if (attacher != null) {
+            attacher.update();
+        }
+    }
 
-//    @Override
-//    protected boolean setFrame(int l, int t, int r, int b) {
+    //    @Override
+    protected boolean setFrame(int l, int t, int r, int b) {
 //        boolean changed = super.setFrame(l, t, r, b);
 //        if (changed) {
 //            attacher.update();
 //        }
 //        return changed;
-//    }
+
+        return false;
+    }
 
     public void setRotationTo(float rotationDegree) {
         attacher.setRotationTo(rotationDegree);
@@ -257,9 +273,10 @@ public class PhotoView extends Image {
         attacher.setZoomTransitionDuration(milliseconds);
     }
 
-    public void setOnDoubleTapListener(GestureDetector.OnDoubleTapListener onDoubleTapListener) {
-        attacher.setOnDoubleTapListener(onDoubleTapListener);
-    }
+    // TODO 鸿蒙暂无GestureDetector对应API，后续对接或自己实现
+//    public void setOnDoubleTapListener(GestureDetector.OnDoubleTapListener onDoubleTapListener) {
+//        attacher.setOnDoubleTapListener(onDoubleTapListener);
+//    }
 
     public void setOnScaleChangeListener(OnScaleChangedListener onScaleChangedListener) {
         attacher.setOnScaleChangeListener(onScaleChangedListener);

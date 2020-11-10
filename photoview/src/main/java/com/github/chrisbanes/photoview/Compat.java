@@ -27,18 +27,16 @@ class Compat {
     private static final int SIXTY_FPS_INTERVAL = 1000 / 60;
 
     public static void postOnAnimation(Component component, Runnable runnable) {
-        if (VERSION.SDK_INT >= VERSION_CODES.JELLY_BEAN) {
-            postOnAnimationJellyBean(component, runnable);
-        } else {
+//        if (VERSION.SDK_INT >= VERSION_CODES.JELLY_BEAN) {
+//            postOnAnimationJellyBean(component, runnable);
+//        } else {
 //            component.postDelayed(runnable, SIXTY_FPS_INTERVAL);
-            component.addDrawTask();
-        }
-        component.createAnimatorProperty();
+//        }
     }
 
 //    @TargetApi(16)
 //    private static void postOnAnimationJellyBean(Component view, Runnable runnable) {
-        view.postOnAnimation(runnable);
+//        view.postOnAnimation(runnable);
 //    }
 
 }

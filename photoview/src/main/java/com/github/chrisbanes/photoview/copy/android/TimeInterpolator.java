@@ -4,7 +4,7 @@ package com.github.chrisbanes.photoview.copy.android;
  * A time interpolator defines the rate of change of an animation. This allows animations
  * to have non-linear motion, such as acceleration and deceleration.
  */
-// TODO 从Android中抄过来的
+// TODO copy from Android
 public interface TimeInterpolator {
 
     /**

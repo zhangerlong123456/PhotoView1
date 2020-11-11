@@ -124,6 +124,7 @@ public class PhotoView extends Image {
         }
     }
 
+
     @Override
     public void setPixelMap(int resId) {
         super.setPixelMap(resId);

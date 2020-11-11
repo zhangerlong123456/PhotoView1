@@ -3,7 +3,7 @@
                    ohos:width="match_parent"
                    ohos:height="match_parent"
                    ohos:orientation="vertical">
-    <com.github.chrisbanes.photoview.PhotoView
-            ></com.github.chrisbanes.photoview.PhotoView>
+<!--    <com.github.chrisbanes.photoview.PhotoView-->
+<!--            ></com.github.chrisbanes.photoview.PhotoView>-->
 
 </DirectionalLayout>

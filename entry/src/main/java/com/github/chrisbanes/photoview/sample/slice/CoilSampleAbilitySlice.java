@@ -21,8 +21,8 @@ public class CoilSampleAbilitySlice extends AbilitySlice {
     public void onStart(Intent intent) {
         super.onStart(intent);
         setUIContent(ResourceTable.Layout_ability_simple);
-        PhotoView photoView = (PhotoView) findComponentById(ResourceTable.Id_list);
-        photoView.setImageURI(Uri.parse("https://images.unsplash.com/photo-1577643816920-65b43ba99fba?ixlib=rb-1.2.1&auto=format&fit=crop&w=3300&q=80"));
+//        PhotoView photoView = (PhotoView) findComponentById(ResourceTable.Id_list);
+//        photoView.setImageURI(Uri.parse("https://images.unsplash.com/photo-1577643816920-65b43ba99fba?ixlib=rb-1.2.1&auto=format&fit=crop&w=3300&q=80"));
 //        photoView.load("https://images.unsplash.com/photo-1577643816920-65b43ba99fba?ixlib=rb-1.2.1&auto=format&fit=crop&w=3300&q=80");
     }
 }

@@ -28,6 +28,37 @@
     },
     "abilities": [
       {
+
+        "orientation": "landscape",
+        "formEnabled": false,
+        "name": "com.github.chrisbanes.photoview.sample.MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:mainability_description",
+        "label": "PhotoView",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "orientation": "landscape",
+        "formEnabled": false,
+        "name": "com.github.chrisbanes.photoview.sample.TransitionAbility",
+        "icon": "$media:icon",
+        "description": "$string:transitionability_description",
+        "label": "entry",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "orientation": "landscape",
+        "formEnabled": false,
+        "name": "com.github.chrisbanes.photoview.sample.TransitionToAbility",
+        "icon": "$media:icon",
+        "description": "$string:transitiontoability_description",
+        "label": "entry",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
         "skills": [
           {
             "entities": [
@@ -40,10 +71,20 @@
         ],
         "orientation": "landscape",
         "formEnabled": false,
-        "name": "com.github.chrisbanes.photoview.sample.MainAbility",
+        "name": "com.github.chrisbanes.photoview.sample.CoilSampleAbility",
         "icon": "$media:icon",
-        "description": "$string:mainability_description",
-        "label": "PhotoView",
+        "description": "$string:coilsampleability_description",
+        "label": "entry",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "orientation": "landscape",
+        "formEnabled": false,
+        "name": "com.github.chrisbanes.photoview.sample.SimpleSampleAbility",
+        "icon": "$media:icon",
+        "description": "$string:simplesampleability_description",
+        "label": "entry",
         "type": "page",
         "launchType": "standard"
       }

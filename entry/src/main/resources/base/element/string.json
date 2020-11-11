@@ -7,6 +7,22 @@
     {
       "name": "mainability_description",
       "value": "hap sample empty page"
+    },
+    {
+      "name": "transitionability_description",
+      "value": "hap sample empty page"
+    },
+    {
+      "name": "transitiontoability_description",
+      "value": "hap sample empty page"
+    },
+    {
+      "name": "coilsampleability_description",
+      "value": "hap sample empty page"
+    },
+    {
+      "name": "simplesampleability_description",
+      "value": "hap sample empty page"
     }
   ]
 }
